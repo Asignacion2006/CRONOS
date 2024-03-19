@@ -1,8 +1,9 @@
 html{
     background-color: rgb(0, 0, 0);
-    min-width: 100%;
-    max-width: 100%;
-    margin: 0% auto;
+    min-height: 100%;
+    max-height: 100%;
+    margin-top: 0% auto;
+    padding-top: 0% auto;
 }
 #BARRA{
     font-size: 40px;
@@ -16,7 +17,6 @@ html{
     padding-left: 0;
 }
 .menu-horizontal >li >a{
-    display: block;
     padding: -10px;
     color: rgb(255, 115, 0);
     text-decoration: none;
@@ -29,10 +29,106 @@ html{
     font-size: 80px;
     text-shadow: 10px;
 }
-#Texto{
+.Texto{
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 115, 0);    
     width:30%;
     text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+}
+.menu-vertical{
+    display: none;
+    position:relative;
+    list-style: none;
+    width: auto;
+    background-color: rgba(0,200,255,);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+}
+#cuadrado{
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    animation-name: mianimacion;
+    animation-duration: 5s;
+    position: relative; left: 5%; top: 50px;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes mianimacion {
+    0%{background:#000000;}
+    50%{background:rgb(0, 200, 255);}
+    100%{background: rgb(255, 115, 0);}
+}
+#cuadrado1{
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    animation-name: mianimacion1;
+    animation-duration: 5s;
+    position: relative; left: 83pc;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes mianimacion1 {
+    0%{background:#000000;}
+    50%{background:rgb(0, 200, 255);}
+    100%{background: rgb(255, 115, 0);}
+}
+#cuadrado2{
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    animation-name: mianimacion2;
+    animation-duration: 5s;
+    position: relative; left: 100px; top: 50px;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes mianimacion2 {
+    0%{background:#000000;}
+    50%{background:rgb(0, 200, 255);}
+    100%{background: rgb(255, 115, 0);}
+}
+#cuadrado3{
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    animation-name: mianimacion3;
+    animation-duration: 5s;
+    position: relative; left: 71pc;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes mianimacion3 {
+    0%{background:#000000;}
+    50%{background:rgb(0, 200, 255);}
+    100%{background: rgb(255, 115, 0);}
+}
+.pp{
+    height: 30px;
+    background: #000000;
+    animation-name: tt;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    padding-left: 100% ;
+}
+@keyframes tt {
+    0%{background:#000000;}
+    50%{background:rgb(0, 200, 255);}
+    100%{background: rgb(255, 115, 0);}
 }
